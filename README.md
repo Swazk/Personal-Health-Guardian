@@ -1,258 +1,119 @@
 Personal Health Guardian
 
-
-
 A modular AI-powered health analysis tool that extracts data from medical PDF reports and generates:
 
+📄 Raw text extraction
+
+📝 Summaries
+
+💡 Health recommendations
+
+📈 Trend analysis
+
+🍽 Diet analysis
+
+😴 Sleep analysis
+
+🧠 Stress & mental health analysis
+
+💧 Hydration analysis
 
 
-?? Raw text extraction
+Built with a clean, extensible agent-based architecture, allowing multiple independent health modules to work together and produce a combined full report.
 
 
+🚀 Features
 
-?? Summaries
+🔍 PDF Extraction
 
-
-
-?? Health recommendations
-
+Uses PyMuPDF to extract raw text from any medical report.
 
 
-?? Trend analysis
+🤖 Modular Agents
+
+Each health domain has its own agent:
+
+report_agent – raw text extraction
+
+summary_agent – generates high-level summary
+
+recommendation_agent – health recommendations
+
+trend_agent – detects repeating patterns
+
+diet_agent – BMI, nutrition flags & diet suggestions
+
+sleep_agent – sleep score & sleep hygiene evaluation
+
+stress_agent – stress/mental health checks
+
+hydration_agent – water-intake analysis
 
 
+🧩 Main Entrypoint
 
-?? Diet analysis
+The src/main.py script:
 
+Reads the input PDF
 
+Calls all health agents
 
-?? Sleep analysis
-
-
-
-?? Stress \& mental health analysis
-
+Prints a complete consolidated report
 
 
-?? Hydration analysis
-
-
-
-
-
-Built with a clean, extensible agent-based architecture.
-
-
-
-?? Features
-
-
-
-? PDF extraction using PyMuPDF
-
-
-
-? Individual �agents� for each health domain
-
-
-
-? Central main.py orchestrates full analysis
-
-
-
-? Easy to extend with new agents
-
-
-
-? Fully modular folder structure
-
-
-
-?? Project Structure
-
-
+🗂 Project Structure
 
 Personal-Health-Guardian/
-
-�
-
-+-- sample\_reports/
-
-�   +-- sample1.pdf
-
-�
-
-+-- src/
-
-�   +-- main.py
-
-�   +-- agents/
-
-�   �   +-- report\_agent.py
-
-�   �   +-- summary\_agent.py
-
-�   �   +-- recommendation\_agent.py
-
-�   �   +-- trend\_agent.py
-
-�   �   +-- diet\_agent.py
-
-�   �   +-- sleep\_agent.py
-
-�   �   +-- stress\_agent.py
-
-�   �   +-- hydration\_agent.py
-
-�   �
-
-�   +-- utils/
-
-�       +-- pdf\_utils.py
-
-�
-
-+-- requirements.txt
-
-+-- README.md
+│
+├── sample_reports/
+│   └── sample1.pdf
+│
+├── src/
+│   ├── main.py
+│   ├── agents/
+│   │   ├── report_agent.py
+│   │   ├── summary_agent.py
+│   │   ├── recommendation_agent.py
+│   │   ├── trend_agent.py
+│   │   ├── diet_agent.py
+│   │   ├── sleep_agent.py
+│   │   ├── stress_agent.py
+│   │   └── hydration_agent.py
+│   │
+│   └── utils/
+│       └── pdf_utils.py
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── LICENSE
 
 
+⚙ Installation & Usage
 
-?? Setup Instructions
-
-
-
-1\. Create virtual environment
-
-
+1️⃣ Create and activate virtual environment
 
 python -m venv venv
+venv\Scripts\activate
 
-
-
-2\. Activate the environment
-
-
-
-venv\\Scripts\\activate
-
-
-
-3\. Install dependencies
-
-
+2️⃣ Install dependencies
 
 pip install -r requirements.txt
 
+3️⃣ Run the tool
 
+python -m src.main
 
-? How to Run the Project
 
+👥 Contributors
 
+Swathi Senthil Kumar
 
-Full analysis of a PDF report
+Shakthivel K (Associate Developer)
 
+S Kalaiarasan — UI, Implementation
 
 
-python -m src.main --report sample\_reports\\sample1.pdf
+📜 License
 
-
-
-This runs:
-
-
-
-PDF extraction
-
-
-
-Summary
-
-
-
-Recommendations
-
-
-
-Trend analysis
-
-
-
-Diet Agent
-
-
-
-Sleep Agent
-
-
-
-Stress Agent
-
-
-
-Hydration Agent
-
-
-
-
-
-And prints everything in a neat report.
-
-
-
-?? Agents Overview
-
-
-
-Agent	              File	                Purpose
-
-
-
-Report Agent	      report\_agent.py	        Extracts text from PDF
-
-Summary Agent	      summary\_agent.py	        Generates document summary
-
-Recommendation Agent  recommendation\_agent.py	Health guidance
-
-Trend Agent	      trend\_agent.py	        Detects health trends
-
-Diet Agent	      diet\_agent.py	        Nutrition \& BMI insights
-
-Sleep Agent	      sleep\_agent.py	        Sleep pattern analysis
-
-Stress Agent	      stress\_agent.py	        Mental health indicators
-
-Hydration Agent	      hydration\_agent.py	Fluid intake evaluation
-
-
-
-?? Contributors
-
-
-
-Swathi S      (Lead Developer)
-
-S Kalaiarasan (UI, Implementation)
-
-Shakthivel K  (Associate Developer)
-
-
-
-?? Future Enhancements
-
-
-
-Add chatbot interface
-
-
-
-Add automatic graph generation
-
-
-
-Add anomaly detection for critical values
-
-
-
-Export report to PDF / HTML
-
+This project is licensed under the MIT Licens
