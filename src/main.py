@@ -10,6 +10,7 @@ from src.agents.trend_agent import analyze_trends
 from src.agents.diet_agent import analyze as analyze_diet
 from src.agents.sleep_agent import analyze_sleep
 from src.agents.stress_agent import analyze_stress
+from src.agents.hydration_agent import analyze as analyze_hydration
 
 def main():
     print("=== Personal Health Guardian ===")
@@ -51,6 +52,11 @@ def main():
     stress = analyze_stress(data)
     print("\nStress / Mental Health Analysis:")
     print(stress)
+
+    # Hydration Analysis
+    hydration = analyze_hydration(data)
+    print("\nHydration Analysis:")
+    print(hydration)
 
     print("\n=== End of Analysis ===")
 
