@@ -8,6 +8,7 @@ from src.agents.summary_agent import generate_summary
 from src.agents.recommendation_agent import generate_recommendations
 from src.agents.trend_agent import analyze_trends
 from src.agents.diet_agent import analyze as analyze_diet
+from src.agents.sleep_agent import analyze_sleep
 
 def main():
     print("=== Personal Health Guardian ===")
@@ -39,6 +40,11 @@ def main():
     diet = analyze_diet(data)
     print("\nDiet Analysis:")
     print(diet)
+
+    # Sleep Analysis
+    sleep = analyze_sleep(data)
+    print("\nSleep Analysis:")
+    print(sleep)
 
     print("\n=== End of Analysis ===")
 
