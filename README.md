@@ -115,12 +115,7 @@ _**Development notes**_
 - Keep `requirements.txt` updated after adding libs: `pip freeze > requirements.txt`.
 
 
-
-```
-
 Open `http://localhost:8501` and upload a sample PDF (`sample_reports/sample1.pdf`) to test.
-
----
 
 
 _**🖥️ What the Program Outputs**_
