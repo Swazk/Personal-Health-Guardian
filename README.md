@@ -5,15 +5,15 @@ Personal Health Guardian is a modular AI-driven health analysis system that extr
 
 _**⭐ Key Capabilities**_
 
-✔️ Extracts raw text from medical PDFs
-✔️ Generates concise summaries
-✔️ Provides personalized health recommendations
-✔️ Performs trend analysis
-✔️ Diet evaluation (BMI, nutrition flags, meal suggestions)
-✔️ Sleep quality assessment
-✔️ Stress & mental health analysis
-✔️ Hydration & water intake evaluation
-✔️ Clean, fully modular Agent Architecture
+* Extracts raw text from medical PDFs
+* Generates concise summaries
+* Provides personalized health recommendations
+* Performs trend analysis
+* Diet evaluation (BMI, nutrition flags, meal suggestions)
+* Sleep quality assessment
+* Stress & mental health analysis
+* Hydration & water intake evaluation
+* Clean, fully modular Agent Architecture
 
 
 _**🧠 How It Works**_
