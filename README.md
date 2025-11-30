@@ -60,18 +60,22 @@ Personal-Health-Guardian/
 
 **_🚀 Installation & Usage
 1️⃣ Create a Virtual Environment_**
+
 python -m venv venv
 
 
 **_2️⃣ Activate It_**
+
 venv\Scripts\activate   # Windows
 
 
 **_3️⃣ Install Required Libraries_**
+
 pip install -r requirements.txt
 
 
 **_4️⃣ Run the Program_**
+
 python -m src.main
 
 
