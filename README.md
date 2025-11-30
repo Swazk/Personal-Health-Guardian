@@ -1,67 +1,36 @@
-Personal Health Guardian
+_**🩺 Personal Health Guardian – AI-Powered Health Analysis Tool**_
 
-A modular AI-powered health analysis tool that extracts data from medical PDF reports and generates:
-
-📄 Raw text extraction
-
-📝 Summaries
-
-💡 Health recommendations
-
-📈 Trend analysis
-
-🍽 Diet analysis
-
-😴 Sleep analysis
-
-🧠 Stress & mental health analysis
-
-💧 Hydration analysis
+Personal Health Guardian is a modular AI-driven health analysis system that extracts data from medical PDF reports and generates actionable insights including summaries, trends, lifestyle recommendations, and detailed health domain analysis.
 
 
-Built with a clean, extensible agent-based architecture, allowing multiple independent health modules to work together and produce a combined full report.
+_**⭐ Key Capabilities**_
+
+✔️ Extracts raw text from medical PDFs
+✔️ Generates concise summaries
+✔️ Provides personalized health recommendations
+✔️ Performs trend analysis
+✔️ Diet evaluation (BMI, nutrition flags, meal suggestions)
+✔️ Sleep quality assessment
+✔️ Stress & mental health analysis
+✔️ Hydration & water intake evaluation
+✔️ Clean, fully modular Agent Architecture
 
 
-🚀 Features
+_**🧠 How It Works**_
 
-🔍 PDF Extraction
-
-Uses PyMuPDF to extract raw text from any medical report.
-
-
-🤖 Modular Agents
-
-Each health domain has its own agent:
-
-report_agent – raw text extraction
-
-summary_agent – generates high-level summary
-
-recommendation_agent – health recommendations
-
-trend_agent – detects repeating patterns
-
-diet_agent – BMI, nutrition flags & diet suggestions
-
-sleep_agent – sleep score & sleep hygiene evaluation
-
-stress_agent – stress/mental health checks
-
-hydration_agent – water-intake analysis
+The system is built around independent agents, each responsible for one part of the analysis:
+* **Report Agent** → Extract raw PDF text
+* **Summary Agent** → Generate clean summary
+* **Recommendation Agent** → Provide health suggestions
+* **Trend Agent** → Detect patterns or abnormalities
+* **Diet Agent** → Evaluate nutrition and BMI
+* **Sleep Agent** → Analyze sleep-related information
+* **Stress Agent** → Mental health and stress-level insights
+* **Hydration Agent** → Water intake recommendations
+All results are collected together by the main entrypoint script to generate a full health report.
 
 
-🧩 Main Entrypoint
-
-The src/main.py script:
-
-Reads the input PDF
-
-Calls all health agents
-
-Prints a complete consolidated report
-
-
-🗂 Project Structure
+**_📂 Project Structure_**
 
 Personal-Health-Guardian/
 │
@@ -70,6 +39,7 @@ Personal-Health-Guardian/
 │
 ├── src/
 │   ├── main.py
+│   │
 │   ├── agents/
 │   │   ├── report_agent.py
 │   │   ├── summary_agent.py
@@ -83,37 +53,72 @@ Personal-Health-Guardian/
 │   └── utils/
 │       └── pdf_utils.py
 │
-├── README.md
 ├── requirements.txt
-├── .gitignore
+├── README.md
 └── LICENSE
 
 
-⚙ Installation & Usage
-
-1️⃣ Create and activate virtual environment
-
+**_🚀 Installation & Usage
+1️⃣ Create a Virtual Environment_**
 python -m venv venv
-venv\Scripts\activate
 
-2️⃣ Install dependencies
 
+**_2️⃣ Activate It_**
+venv\Scripts\activate   # Windows
+
+
+**_3️⃣ Install Required Libraries_**
 pip install -r requirements.txt
 
-3️⃣ Run the tool
 
+**_4️⃣ Run the Program_**
 python -m src.main
 
 
-👥 Contributors
+_**🖥️ What the Program Outputs**_
 
-Swathi Senthil Kumar
+* Extracted raw text
+* Summary of the health report
+* Key recommendations
+* Diet/BMI insights
+* Sleep quality score
+* Stress & mental health suggestions
+* Hydration advice
+* Trend observations
+* Final consolidated report
 
-Shakthivel K (Associate Developer)
 
-S Kalaiarasan — UI, Implementation
+**_🛠️ Tech Stack_**
+
+| Component       | Technology          |
+| --------------- | ------------------- |
+| Language        | Python 3.10+        |
+| PDF Parsing     | PyMuPDF (fitz)      |
+| Architecture    | Modular Agent-based |
+| Version Control | Git + GitHub        |
 
 
-📜 License
+**_👥 Team Members_**
 
-This project is licensed under the MIT Licens
+| Name                     | Role                                     |
+| ------------------------ | ---------------------------------------- |
+| **Swathi Senthil Kumar** | Lead Developer (Complete Implementation) |
+| **Shakthivel K**         | Associate Developer                      |
+| **S. Kalaiarasan**       | UI & Implementation                      |
+
+
+**_📝 Future Improvements_**
+
+* Convert into a web dashboard (Flask / FastAPI)
+* Export final reports as PDF/HTML
+* Add Machine Learning health anomaly detection
+* Integrate with smartwatch/fitness tracker data
+
+
+_**📜 License**_
+
+Distributed under the MIT License.
+Feel free to use, modify, and enhance.
+Hydration Agent → Water intake recommendations
+
+All results are collected together by the main entrypoint script to generate a full health report.
