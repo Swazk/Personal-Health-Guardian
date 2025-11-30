@@ -129,6 +129,10 @@ _**🖥️ What the Program Outputs**_
 * Hydration advice
 * Trend observations
 * Final consolidated report
+* <img width="1914" height="962" alt="Screenshot 2025-11-30 192832" src="https://github.com/user-attachments/assets/ad97d2b6-3d15-4a6c-a31e-5b7fc5448faa" />
+* <img width="1584" height="860" alt="Screenshot 2025-11-30 192900" src="https://github.com/user-attachments/assets/ad518c42-6cf7-40ea-8634-aa1b7be5eb18" />
+* <img width="1596" height="859" alt="Screenshot 2025-11-30 192933" src="https://github.com/user-attachments/assets/0ad9241d-fe71-4491-a85a-d281b388535f" />
+* <img width="1596" height="863" alt="Screenshot 2025-11-30 192950" src="https://github.com/user-attachments/assets/08a8e2d2-9c71-4b91-a8b2-9f747ec6d664" />
 
 
 **_🛠️ Tech Stack_**
