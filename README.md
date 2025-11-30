@@ -32,6 +32,9 @@ All results are collected together by the main entrypoint script to generate a f
 
 **_📂 Project Structure_**
 
+## 📂 Project Structure
+
+```text
 Personal-Health-Guardian/
 │
 ├── sample_reports/
@@ -56,9 +59,11 @@ Personal-Health-Guardian/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
+```
 
 
 **_🚀 Installation & Usage
+
 1️⃣ Create a Virtual Environment_**
 
 python -m venv venv
