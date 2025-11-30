@@ -60,9 +60,9 @@ Personal-Health-Guardian/
 ```
 
 
-**_🚀 Installation & Usage
+_**🚀 Installation & Usage**_
 
-1️⃣ Create a Virtual Environment_**
+_**1️⃣ Create a Virtual Environment**_
 
 python -m venv venv
 
