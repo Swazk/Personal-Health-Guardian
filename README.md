@@ -1,8 +1,21 @@
 _**🩺 Personal Health Guardian – AI-Powered Health Analysis Tool**_
 
-Personal Health Guardian is a modular AI-driven health analysis system that extracts data from medical PDF reports and generates actionable insights including summaries, trends, lifestyle recommendations, and detailed health domain analysis.
+Personal Health Guardian is a modular AI-driven health analysis system that extracts data from medical PDF reports and generates actionable insights including summaries, trends, lifestyle recommendations, and detailed health domain analysis (diet, sleep, hydration, stress and trends).
 
 
+_**Features**_
+
+- 🗂 **Raw text extraction** from medical/diagnostic PDF reports (PyMuPDF)
+- 📝 **Summary** generation (concise report summary)
+- 💡 **Health recommendations** (diet, blood sugar, BP, general guidance)
+- 📈 **Trend analysis** (detects longitudinal changes in key metrics)
+- 🥗 **Diet analysis** (basic meal suggestions and flags)
+- 💤 **Sleep analysis** (sleep score & hygiene tips)
+- 🧘 **Stress / mental health analysis** (flags & recommendations)
+- 💧 **Hydration analysis** (recommended intake and tips)
+- 🧩 **Modular agent-based architecture** — each health domain is an independent "agent"
+
+  
 _**⭐ Key Capabilities**_
 
 * Extracts raw text from medical PDFs
@@ -16,6 +29,14 @@ _**⭐ Key Capabilities**_
 * Clean, fully modular Agent Architecture
 
 
+_**Demo / Quick start**_
+
+**Requirements:**
+- Python 3.11 (recommended)
+- Virtual environment (venv)
+- `pip install -r requirements.txt`
+
+  
 _**🧠 How It Works**_
 
 The system is built around independent agents, each responsible for one part of the analysis:
@@ -32,28 +53,25 @@ All results are collected together by the main entrypoint script to generate a f
 
 ## 📂 Project Structure
 
-```text
+```
 Personal-Health-Guardian/
-│
 ├── sample_reports/
 │   └── sample1.pdf
-│
+├── app/
+│   └── app.py              # Streamlit UI
 ├── src/
-│   ├── main.py
-│   │
-│   ├── agents/
-│   │   ├── report_agent.py
-│   │   ├── summary_agent.py
-│   │   ├── recommendation_agent.py
-│   │   ├── trend_agent.py
-│   │   ├── diet_agent.py
-│   │   ├── sleep_agent.py
-│   │   ├── stress_agent.py
-│   │   └── hydration_agent.py
-│   │
-│   └── utils/
-│       └── pdf_utils.py
-│
+│   ├── main.py             # entrypoint (CLI/demo)
+│   └── agents/
+│       ├── report_agent.py
+│       ├── summary_agent.py
+│       ├── recommendation_agent.py
+│       ├── trend_agent.py
+│       ├── diet_agent.py
+│       ├── sleep_agent.py
+│       ├── stress_agent.py
+│       └── hydration_agent.py
+├── utils/
+│   └── pdf_utils.py
 ├── requirements.txt
 ├── README.md
 └── LICENSE
@@ -80,6 +98,29 @@ pip install -r requirements.txt
 **_4️⃣ Run the Program_**
 
 python -m src.main
+
+
+_**start the Streamlit run demo UI**_
+
+streamlit run app/app.py
+
+
+_**Testing**_
+- Drop `sample_reports/sample1.pdf` or your own PDF into the UI, upload and inspect the generated sections.
+- Unit tests (if present) are in `/tests`; run with `pytest`.
+
+
+_**Development notes**_
+- Use modular agents to extend functionality (add new `agent_x.py` and import in `src/main.py` / `app/app.py`).
+- Keep `requirements.txt` updated after adding libs: `pip freeze > requirements.txt`.
+
+
+
+```
+
+Open `http://localhost:8501` and upload a sample PDF (`sample_reports/sample1.pdf`) to test.
+
+---
 
 
 _**🖥️ What the Program Outputs**_
