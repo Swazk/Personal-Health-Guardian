@@ -30,8 +30,6 @@ The system is built around independent agents, each responsible for one part of 
 All results are collected together by the main entrypoint script to generate a full health report.
 
 
-**_📂 Project Structure_**
-
 ## 📂 Project Structure
 
 ```text
